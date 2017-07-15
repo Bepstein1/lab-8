@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="index.css"></link>
-  </head>
-  <body>
-    <table>
-       <tr>
-         <td>1</td>
-         <td>2</td>
-         <td>3</td>
-         <td>4</td>
-         <td>5</td>
-       </tr>
-     </table>
-<form action="">
-  <p>Select a seat:
-    <br />
-    <input type="radio" name="number" value="1" checked="checked" /> Seat 1
-    <input type="radio" name="number" value="2" checked="checked" /> Seat 2
-    <input type="radio" name="number" value="3" checked="checked" /> Seat 3
-    <input type="radio" name="number" value="4" checked="checked" /> Seat 4
-    <input type="radio" name="number" value="5" checked="checked" /> Seat 5
-  </p>
-</form>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="index.js"></script>
-  </body>
+ <head>
+   <script
+     src="https://code.jquery.com/jquery-3.2.1.js"
+     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+     crossorigin="anonymous"></script>
+   <script src='index.js'></script>
+   <link href="index.css" rel="stylesheet">
+   <meta charset="utf-8">
+   <title></title>
+ </head>
+ <body>
+   <table>
+     <tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+       <td>4</td>
+       <td>5</td>
+     </tr>
+   </table>
+
+   <form action=""
+     <p> Please Fill out out your information:
+       <br />
+       <input type="radio" name="seat" value="number" checked="checked" /> Seat 1
+       <input type="radio" name="seat" value="number" checked="checked" /> Seat 2
+       <input type="radio" name="seat" value="number" checked="checked" /> Seat 3
+       <input type="radio" name="seat" value="number" checked="checked" /> Seat 4
+       <input type="radio" name="seat" value="number" checked="checked" /> Seat 5 <br />
+       <br />
+         <legend>Contact details</legend>
+         <label>Name:<br />
+           <input type="text" name="name" /></label><br />
+         </label>
+         <label>Mobile:<br />
+           <input type="text" name="" /></label><br />
+         </label>
+         <input type="submit" name="submit" value="Choose Seat" class=submitbutton">
+     </p>
+   </form>
+
+ </body>
 </html>
