@@ -1,8 +1,12 @@
 
-
+body {
+  border: solid 10px;
+  color: black;
+  width: 355px;
+  font-family: sans-serif;
+}
 table {
   font-size: 100px;
- border: solid 10px;
 }
 td {
  border: solid 5px;
