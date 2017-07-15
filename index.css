@@ -1,4 +1,4 @@
-body {
+/*body {
   font-family: arial;
   background-color: rgb(185, 179,175);
   opacity: 0.5);}
@@ -25,9 +25,18 @@ li{
   display: inline-block;
   list-style: none;
   width: 100px;
-}
-
+}*/
+/*
 .red-background{
   background-color: red;
   color: grey;
+}*/
+
+table {
+  font-size: 100px;
+ border: solid 10px;
+}
+td {
+ border: solid 5px;
+ color: grey;
 }
