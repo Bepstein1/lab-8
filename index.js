@@ -1,6 +1,6 @@
 $(function(){
 $('td').click(function(){
-  $(this).css('background-color', 'blue');
+  $(this).toggleClass('blue');
 });
   $('#submitbutton').on('click', function(){
     delay(1500).remove();

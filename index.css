@@ -12,3 +12,4 @@ td {
  border: solid 5px;
  color: grey;
 }
+td.blue {background-color: blue;}
