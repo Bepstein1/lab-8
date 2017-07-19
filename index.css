@@ -6,10 +6,11 @@ body {
   font-family: sans-serif;
 }
 table {
-  font-size: 100px;
+  font-size: 90px;
 }
 td {
  border: solid 5px;
  color: grey;
 }
 td.blue {background-color: blue;}
+td.reserved {background-color: red;}
