@@ -1,6 +1,11 @@
 //how to submit the form into an object
-var seatsReserved={};
+var reservedSeats = {};
 
+//assuming you have seatNumber, name, and phoneNumber variables
+// reservedSeats[seatNumber] = {
+// 	customerName: name,
+// 	number: phoneNumber,
+// }
 
 $(function(){
   $('td').click(function(){
@@ -15,7 +20,7 @@ $('form').submit(function(event){
 	// val is how you get the value
 	var name  = $(this).find('#name').val();
   var mobile  = $(this).find('#mobile').val();
-  var reservedSeats = '';
+  // var reservedSeats = '';
   var $tableData = $('td');
   // for (var i = 0; i < $tableData.length; i++) {
   //   if($($tableData[i]).hasClass('blue')){
@@ -30,8 +35,14 @@ $('form').submit(function(event){
       $(seat).removeClass('blue');
       $(seat).addClass('reserved');
       $(seat).html('X');
+      reservedSeats[$(seat).attr('id')] = {
+      	customerName: name,
+      	phoneNumber: mobile,
+      }
     }
   });
+
+  console.log(reservedSeats);
 
   alert(name + ' your reserved seats' + reservedSeats);
   // $(this).trigger("reset");  --to reset the form
